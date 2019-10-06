@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include "Figures.h"
+
+using namespace std;
 
 int main(void)
 {
