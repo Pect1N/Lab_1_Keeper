@@ -3,5 +3,7 @@
 
 class Voluminous
 {
-
+	Voluminous* next;
+	Voluminous* previous;
 };
+
