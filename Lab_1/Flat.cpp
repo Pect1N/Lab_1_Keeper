@@ -7,61 +7,45 @@ using namespace std;
 
 Flat::Flat()
 {
-	x_size = 0;
-	y_size = 0;
-	area = 0;
+	next = 0;
+	previous = 0;
 }
 
-void Flat::AreaCalculate()
+Flat::~Flat()
 {
-	if (x_size == 0)
-		cout << "No x" << endl;
-	else if (y_size == 0)
-		cout << "no y" << endl;
-	else
-	{
-		area = x_size * y_size;
-		cout << "Calculated" << endl;
-	}
-	system("pause");
+
 }
 
-void Flat::ShowArea()
+void Flat::set_next()
 {
-	cout << "Area: " << area << endl;
-	system("pause");
+
 }
 
-void Flat::set_x_size()
+void Flat::set_previous()
 {
-	cout << "Enter x" << endl;
-	cin >> x_size;
+
 }
 
-void Flat::set_y_size()
+Flat* Flat::get_next()
 {
-	cout << "Enter y" << endl;
-	cin >> y_size;
+
+
+	return 0;
 }
 
-float Flat::get_x_size()
+Flat* Flat::get_previous()
 {
-	return x_size;
+
+
+	return 0;
 }
 
-float Flat::get_y_size()
+Rectangle::Rectangle()
 {
-	return y_size;
+
 }
 
-void Flat::show_x_size()
+Rectangle::~Rectangle()
 {
-	cout << "x_size: " << x_size << endl;
-	system("pause");
-}
 
-void Flat::show_y_size()
-{
-	cout << "y_size: " << y_size << endl;
-	system("pause");
 }

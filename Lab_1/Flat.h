@@ -3,17 +3,21 @@
 
 class Flat
 {
-	float x_size;
-	float y_size;
-	float area;
+	Flat* next;
+	Flat* previous;
 public:
 	Flat();
-	void AreaCalculate();
-	void ShowArea();
-	void set_x_size();
-	void set_y_size();
-	float get_x_size();
-	float get_y_size();
-	void show_x_size();
-	void show_y_size();
+	~Flat();
+	void set_next();
+	void set_previous();
+	Flat* get_next();
+	Flat* get_previous();
+};
+
+class Rectangle : Flat
+{
+
+public:
+	Rectangle();
+	~Rectangle();
 };
