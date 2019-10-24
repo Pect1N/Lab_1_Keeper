@@ -5,5 +5,9 @@
 
 class Figures
 {
-
+	Flat* fstart;
+	Voluminous* vstart;
+public:
+	void set_fstart();
+	void set_vstart();
 };
