@@ -1,13 +1,22 @@
-#pragma once
-#include <stdio.h>
-#include "Flat.h"
-#include "Voluminous.h"
+#include <iostream>
 
-class Figures
+using namespace std;
+
+class Figure
 {
-	Flat* fstart;
-	Voluminous* vstart;
 public:
-	void set_fstart();
-	void set_vstart();
+	virtual void A();
+	virtual void set_name(int);
+	virtual void set_ploshad();
+	virtual void set_width(int);
+	virtual void set_height(int);
+	virtual void set_picture();
+	virtual int get_name();
+	virtual int get_ploshad();
+	virtual int get_width();
+	virtual int get_height();
+	virtual int get_picture();
+	virtual void show();
 };
+
+#pragma once
