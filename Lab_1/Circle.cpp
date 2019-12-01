@@ -12,6 +12,24 @@ Circle::Circle()
 	cout << "Circle constructor" << endl;
 }
 
+Circle::Circle(int i)
+{
+	name = i;
+	ploshad = 0;
+	radius = 0;
+	picture = 0;
+	cout << "Circle constructor with param" << endl;
+}
+
+Circle::Circle(Circle& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	radius = old.get_radius();
+	picture = old.get_picture();
+	cout << "Circle copy constructor" << endl;
+}
+
 Circle::~Circle()
 {
 	name = 0;
