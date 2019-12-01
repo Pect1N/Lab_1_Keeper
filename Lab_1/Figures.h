@@ -39,6 +39,7 @@ public:
 	virtual void set_second_diag(float);
 	virtual float get_first_diag();
 	virtual float get_second_diag();
+
 };
 
 #pragma once

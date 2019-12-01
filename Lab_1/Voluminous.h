@@ -16,6 +16,8 @@ class Sphere : public Voluminous
 	int picture;
 public:
 	Sphere();
+	Sphere(int);
+	Sphere(Sphere&);
 	~Sphere();
 	void set_name(int);
 	void set_ploshad();
@@ -39,6 +41,8 @@ class Pyramid : public Voluminous
 	int picture;
 public:
 	Pyramid();
+	Pyramid(int);
+	Pyramid(Pyramid&);
 	~Pyramid();
 	void set_name(int);
 	void set_ploshad();
@@ -64,6 +68,8 @@ class Cylinder : public Voluminous
 	int picture;
 public:
 	Cylinder();
+	Cylinder(int);
+	Cylinder(Cylinder&);
 	~Cylinder();
 	void set_name(int);
 	void set_ploshad();
@@ -88,6 +94,8 @@ class Kube : public Voluminous
 	int picture;
 public:
 	Kube();
+	Kube(int);
+	Kube(Kube&);
 	~Kube();
 	void set_name(int);
 	void set_ploshad();
@@ -111,6 +119,8 @@ class Cone : public Voluminous
 	int picture;
 public:
 	Cone();
+	Cone(int);
+	Cone(Cone&);
 	~Cone();
 	void set_name(int);
 	void set_ploshad();
