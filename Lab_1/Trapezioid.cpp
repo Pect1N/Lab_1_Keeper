@@ -13,6 +13,30 @@ Trapezioid::Trapezioid()
 	cout << "Trapezioid constructor" << endl;
 }
 
+Trapezioid::Trapezioid(int i)
+{
+	name = i;
+	ploshad = 0;
+	top = 0;
+	base = 0;
+	left = 0;
+	right = 0;
+	picture = 0;
+	cout << "Trapezioid constructor with param" << endl;
+}
+
+Trapezioid::Trapezioid(Trapezioid& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	top = old.get_top();
+	base = old.get_base();
+	left = old.get_left();
+	right = old.get_right();
+	picture = old.get_picture();
+	cout << "Trapezioid copy constructor" << endl;
+}
+
 Trapezioid::~Trapezioid()
 {
 	name = 0;

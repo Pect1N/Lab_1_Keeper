@@ -11,6 +11,26 @@ Rectangle::Rectangle()
 	cout << "Rectandle constructor" << endl;
 }
 
+Rectangle::Rectangle(int i)
+{
+	name = i;
+	ploshad = 0;
+	width = 0;
+	height = 0;
+	picture = 0;
+	cout << "Rectandle constructor with param" << endl;
+}
+
+Rectangle::Rectangle(Rectangle& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	width = old.get_width();
+	height = old.get_height();
+	picture = old.get_picture();
+	cout << "Rectandle copy constructor" << endl;
+}
+
 Rectangle::~Rectangle()
 {
 	name = 0;

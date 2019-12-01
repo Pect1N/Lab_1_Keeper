@@ -12,6 +12,28 @@ Triangle::Triangle()
 	cout << "Triangle constructor" << endl;
 }
 
+Triangle::Triangle(int i)
+{
+	name = i;
+	ploshad = 0;
+	base = 0;
+	left = 0;
+	right = 0;
+	picture = 0;
+	cout << "Triangle constructor with param" << endl;
+}
+
+Triangle::Triangle(Triangle& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	base = old.get_base();
+	left = old.get_left();
+	right = old.get_right();
+	picture = old.get_picture();
+	cout << "Triangle copy constructor" << endl;
+}
+
 Triangle::~Triangle()
 {
 	name = 0;

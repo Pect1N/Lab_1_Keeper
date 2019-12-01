@@ -10,6 +10,24 @@ Sqare::Sqare()
 	cout << "Sqare constructor" << endl;
 }
 
+Sqare::Sqare(int i)
+{
+	name = i;
+	ploshad = 0;
+	side = 0;
+	picture = 0;
+	cout << "Sqare constructor with param" << endl;
+}
+
+Sqare::Sqare(Sqare& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	side = old.get_side();
+	picture = old.get_picture();
+	cout << "Sqare copy constructor" << endl;
+}
+
 Sqare::~Sqare()
 {
 	name = 0;

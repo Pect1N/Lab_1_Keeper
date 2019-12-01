@@ -11,6 +11,26 @@ Rhombus::Rhombus()
 	cout << "Rhombus constructor" << endl;
 }
 
+Rhombus::Rhombus(int i)
+{
+	name = i;
+	ploshad = 0;
+	first_diag = 0;
+	second_diag = 0;
+	picture = 0;
+	cout << "Rhombus constructor with param" << endl;
+}
+
+Rhombus::Rhombus(Rhombus& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	first_diag = old.get_first_diag();
+	second_diag = old.get_second_diag();
+	picture = old.get_picture();
+	cout << "Rhombus copy constructor" << endl;
+}
+
 Rhombus::~Rhombus()
 {
 	name = 0;

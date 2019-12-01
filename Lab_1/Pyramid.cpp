@@ -10,7 +10,27 @@ Pyramid::Pyramid()
 	base = 0;
 	height = 0;
 	picture = 0;
+	cout << "Pyramid constructor with param" << endl;
+}
+
+Pyramid::Pyramid(int i)
+{
+	name = i;
+	ploshad = 0;
+	base = 0;
+	height = 0;
+	picture = 0;
 	cout << "Pyramid constructor" << endl;
+}
+
+Pyramid::Pyramid(Pyramid& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	base = old.get_base();
+	height = old.get_height();
+	picture = old.get_picture();
+	cout << "Pyramid copy constructor" << endl;
 }
 
 Pyramid::~Pyramid()

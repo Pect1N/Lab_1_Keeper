@@ -12,6 +12,24 @@ Sphere::Sphere()
 	cout << "Sphere constructor" << endl;
 }
 
+Sphere::Sphere(int i)
+{
+	name = i;
+	ploshad = 0;
+	radius = 0;
+	picture = 0;
+	cout << "Sphere constructor with param" << endl;
+}
+
+Sphere::Sphere(Sphere& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	radius = old.get_radius();
+	picture = old.get_picture();
+	cout << "Sphere copy constructor" << endl;
+}
+
 Sphere::~Sphere()
 {
 	name = 0;
