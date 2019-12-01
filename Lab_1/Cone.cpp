@@ -13,6 +13,26 @@ Cone::Cone()
 	cout << "Cone constructor" << endl;
 }
 
+Cone::Cone(int i)
+{
+	name = i;
+	ploshad = 0;
+	base = 0;
+	height = 0;
+	picture = 0;
+	cout << "Cone constructor with param" << endl;
+}
+
+Cone::Cone(Cone& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	base = old.get_base();
+	height = old.get_height();
+	picture = old.get_picture();
+	cout << "Cone copy constructor" << endl;
+}
+
 Cone::~Cone()
 {
 	name = 0;

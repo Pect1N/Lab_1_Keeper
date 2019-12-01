@@ -10,6 +10,24 @@ Kube::Kube()
 	cout << "Kube constructor" << endl;
 }
 
+Kube::Kube(int i)
+{
+	name = i;
+	ploshad = 0;
+	side = 0;
+	picture = 0;
+	cout << "Kube constructor with param" << endl;
+}
+
+Kube::Kube(Kube& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	side = old.get_side();
+	picture = old.get_picture();
+	cout << "Kube copy constructor" << endl;
+}
+
 Kube::~Kube()
 {
 	name = 0;

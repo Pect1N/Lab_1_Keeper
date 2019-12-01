@@ -13,6 +13,26 @@ Cylinder::Cylinder()
 	cout << "Cylinder constructor" << endl;
 }
 
+Cylinder::Cylinder(int i)
+{
+	name = i;
+	ploshad = 0;
+	base = 0;
+	height = 0;
+	picture = 0;
+	cout << "Cylinder constructor with param" << endl;
+}
+
+Cylinder::Cylinder(Cylinder& old)
+{
+	name = old.get_name();
+	ploshad = old.get_ploshad();
+	base = old.get_base();
+	height = old.get_height();
+	picture = old.get_picture();
+	cout << "Cylinder copy constructor" << endl;
+}
+
 Cylinder::~Cylinder()
 {
 	name = 0;
